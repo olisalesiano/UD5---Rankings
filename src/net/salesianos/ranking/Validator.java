@@ -10,10 +10,10 @@ public class Validator {
     }
 
     public static boolean isValidYear(int year) {
-        return year > 1800;
+        return year > 1800 && year < 2025;
     }
 
     public static boolean isValidRating(int rating) {
-        return rating >= 0;
+        return rating >= 0 && rating < 100;
     }
 }
